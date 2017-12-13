@@ -17,5 +17,13 @@ body{
   background-color: #A4E0C4;
   color: #628474;
   font-weight: bold;
-  
+}
+
+.nav-bg-style{
+  background-color: #628474;
+}
+
+#nav-font-style{
+  color: white;
+  font-size: 18px;
 }
