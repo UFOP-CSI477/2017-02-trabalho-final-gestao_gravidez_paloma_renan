@@ -1,0 +1,21 @@
+body{
+  background-color: #A4E0C4;
+}
+
+.form-background{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 30px 3px #628474;
+}
+
+.h2-style{
+  color: #628474;
+  font-weight: bold;
+}
+
+.login-button{
+  background-color: #A4E0C4;
+  color: #628474;
+  font-weight: bold;
+  
+}
