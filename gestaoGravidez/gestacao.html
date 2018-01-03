@@ -39,25 +39,33 @@
           <div id="grupo-consultas">
             <form name="consultas">
               <div class="row menu-title">
-                <h2 class="h2-style-title">Consultas médicas</h2> <!-- >>> -->
+                <h2 class="h2-style-title">Consultas médicas</h2>
               </div><br>
-              <label for="data" class="label-style">Data: </label>
-              <input type="date" name="data" class="form-control input-size"><br>
+              <label for="data" class="label-style">* Data: </label>
+              <input type="date" name="data" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaAmplitude">
+                Campo obrigatório.
+              </div><br>
 
-              <label for="horario" class="label-style">Horário: </label>
-              <input type="time" name="horario" class="form-control input-size"><br>
+              <label for="horario" class="label-style">* Horário: </label>
+              <input type="time" name="horario" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaAmplitude">
+                Campo obrigatório.
+              </div><br>
 
-              <label for="data" class="label-style">Médico: </label>
-              <input type="text" name="medico" class="form-control input-size"><br>
+              <label for="data" class="label-style">* Médico: </label>
+              <input type="text" name="medico" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaAmplitude">
+                Campo obrigatório.
+              </div><br>
 
               <label for="observacao" class="label-style">Observação: </label>
               <textarea type="text" name="observacao" class="form-control input-size"></textarea><br>
 
               <button type="submit" name="cadastrar-consulta" class="btn login-button" type="submit">Cadastrar</button>
-              <button type="reset" name="limpar" class="btn login-button">Limpar</button>
-
+              <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
             </form>
-          </div>
+          </div> <!-- >>> -->
 
 
 
