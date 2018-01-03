@@ -62,7 +62,7 @@
               <label for="observacao" class="label-style">Observação: </label>
               <textarea type="text" name="observacao-consulta" class="form-control input-size"></textarea><br>
 
-              <button type="submit" name="cadastrar-consulta" class="btn login-button" type="submit">Cadastrar</button>
+              <button type="submit" name="cadastrar-consulta" class="btn login-button" type="submit">Salvar</button>
               <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
             </form>
           </div> <!-- >>> -->
@@ -95,7 +95,7 @@
               <label for="observacao" class="label-style">Observação: </label>
               <textarea type="text" name="observacao-vacina" class="form-control input-size"></textarea><br>
 
-              <button type="submit" name="cadastrar-vacina" class="btn login-button" type="submit">Cadastrar</button>
+              <button type="submit" name="cadastrar-vacina" class="btn login-button" type="submit">Salvar</button>
               <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
             </form>
           </div> <!-- >>> -->
@@ -131,7 +131,7 @@
               <label for="descricao" class="label-style">Descrição: </label>
               <textarea type="text" name="descricao-humor" class="form-control input-size"></textarea><br>
 
-              <button type="submit" name="cadastrar-humor" class="btn login-button" type="submit">Cadastrar</button>
+              <button type="submit" name="cadastrar-humor" class="btn login-button" type="submit">Salvar</button>
               <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
             </form>
           </div> <!-- >>> -->
@@ -155,10 +155,85 @@
                 Campo obrigatório.
               </div><br>
 
-              <button type="submit" name="cadastrar-vacina" class="btn login-button" type="submit">Cadastrar</button>
+              <button type="submit" name="cadastrar-desejo" class="btn login-button" type="submit">Salvar</button>
               <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
             </form>
           </div> <!-- >>> -->
+
+          <!-- ############################################### -->
+
+          <div id="grupo-album">
+            <form name="album">
+              <div class="row menu-title">
+                <h2 class="h2-style-title">Álbum</h2>
+              </div><br>
+              <label for="data" class="label-style">* Data: </label>
+              <input type="date" name="data-album" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaAlbum">
+                Campo obrigatório.
+              </div><br>
+
+              <label for="arquivo" class="label-style">* Arquivo: </label>
+              <input type="file" name="arquivo-album" class="file input-size" accept="image/*">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaAlbum">
+                Campo obrigatório.
+              </div><br>
+
+              <button type="submit" name="cadastrar-album" class="btn login-button" type="submit">Salvar</button>
+              <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
+            </form>
+          </div> <!-- >>> -->
+
+          <!-- ############################################### -->
+
+          <div id="grupo-diario">
+            <form name="diario">
+              <div class="row menu-title">
+                <h2 class="h2-style-title">Diário do Bebê</h2>
+              </div><br>
+              <label for="data" class="label-style">* Data: </label>
+              <input type="date" name="data-diario" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaDiario">
+                Campo obrigatório.
+              </div><br>
+
+              <label for="peso" class="label-style">* Peso: </label>
+              <input type="text" name="altura-diario" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaDiario">
+                Campo obrigatório.
+              </div><br>
+
+              <label for="altura" class="label-style">* Altura: </label>
+              <input type="text" name="altura-diario" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaDiario">
+                Campo obrigatório.
+              </div><br>
+
+              <label for="posicao" class="label-style">Posição: </label>
+              <input type="text" name="posicao-diario" class="form-control input-size"><br>
+
+              <label for="observacao" class="label-style">Descrição: </label>
+              <textarea type="text" name="descricao-diario" class="form-control input-size"></textarea><br>
+
+              <button type="submit" name="cadastrar-vacina" class="btn login-button" type="submit">Salvar</button>
+              <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
+            </form>
+          </div> <!-- >>> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
