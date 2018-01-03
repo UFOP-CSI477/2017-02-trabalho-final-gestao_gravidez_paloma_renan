@@ -42,32 +42,63 @@
                 <h2 class="h2-style-title">Consultas médicas</h2>
               </div><br>
               <label for="data" class="label-style">* Data: </label>
-              <input type="date" name="data" class="form-control input-size">
-              <div class="alert alert-danger input-size" style="display: none" id="alertaAmplitude">
+              <input type="date" name="data-consulta" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaConsultas">
                 Campo obrigatório.
               </div><br>
 
               <label for="horario" class="label-style">* Horário: </label>
-              <input type="time" name="horario" class="form-control input-size">
-              <div class="alert alert-danger input-size" style="display: none" id="alertaAmplitude">
+              <input type="time" name="horario-consulta" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaConsultas">
                 Campo obrigatório.
               </div><br>
 
               <label for="data" class="label-style">* Médico: </label>
-              <input type="text" name="medico" class="form-control input-size">
-              <div class="alert alert-danger input-size" style="display: none" id="alertaAmplitude">
+              <input type="text" name="medico-consulta" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaConsultas">
                 Campo obrigatório.
               </div><br>
 
               <label for="observacao" class="label-style">Observação: </label>
-              <textarea type="text" name="observacao" class="form-control input-size"></textarea><br>
+              <textarea type="text" name="observacao-consulta" class="form-control input-size"></textarea><br>
 
               <button type="submit" name="cadastrar-consulta" class="btn login-button" type="submit">Cadastrar</button>
               <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
             </form>
           </div> <!-- >>> -->
 
+          <!-- ############################################### -->
 
+          <div id="grupo-vacinas">
+            <form name="vacinas">
+              <div class="row menu-title">
+                <h2 class="h2-style-title">Vacinas</h2>
+              </div><br>
+              <label for="data" class="label-style">* Data: </label>
+              <input type="date" name="data-vacina" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaVacinas">
+                Campo obrigatório.
+              </div><br>
+
+              <label for="horario" class="label-style">* Horário: </label>
+              <input type="time" name="horario-vacina" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaVacinas">
+                Campo obrigatório.
+              </div><br>
+
+              <label for="nome" class="label-style">* Nome: </label>
+              <input type="text" name="nome-vacina" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaVacinas">
+                Campo obrigatório.
+              </div><br>
+
+              <label for="observacao" class="label-style">Observação: </label>
+              <textarea type="text" name="observacao-vacina" class="form-control input-size"></textarea><br>
+
+              <button type="submit" name="cadastrar-vacina" class="btn login-button" type="submit">Cadastrar</button>
+              <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
+            </form>
+          </div> <!-- >>> -->
 
 
 
