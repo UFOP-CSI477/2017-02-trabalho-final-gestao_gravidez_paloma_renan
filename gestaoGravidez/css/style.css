@@ -13,6 +13,20 @@ body{
   font-weight: bold;
 }
 
+.h2-style-title{
+  color: white;
+  font-weight: bold;
+  padding: 1%;
+}
+
+.menu-title{
+  background-color: #628474;
+}
+
+.label-style{
+  color: #628474;
+}
+
 .login-button{
   background-color: #A4E0C4;
   color: #628474;
@@ -48,4 +62,14 @@ body{
   color: white;
   font-size: 18px;
   padding: 5px;
+}
+
+.bg-form{
+  background-color: white;
+  height: 590px;
+  margin-right: -6%;
+}
+
+.input-size{
+  width: 40%;
 }
