@@ -5,6 +5,8 @@
     <title>Login - Gestão de Gravidez</title>
     <link rel="stylesheet" href=".\css\bootstrap\bootstrap.css">
     <link rel="stylesheet" href=".\css\style.css">
+    <script src=".\js\jQuery\jquery-3.2.1.js"></script>
+    <script src=".\js\interface_gestacao.js"></script>
   </head>
   <body>
 
@@ -36,7 +38,18 @@
       <div class="col-md-9">
         <div class="container-fluid bg-form">
 
-          <div id="grupo-consultas">
+          <div id="grupo-info-gestacao">
+              <div class="row menu-title">
+                <h2 class="h2-style-title">Gestação</h2>
+              </div><br>
+              <br><br><br><br><br><br>
+                [Inserir informações sobre gestação aqui.]
+              <br><br><br><br><br><br>
+          </div> <!-- >>> -->
+
+          <!-- ############################################### -->
+
+          <div id="grupo-consultas" style="display: none">
             <form name="consultas">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Consultas médicas</h2>
@@ -69,7 +82,7 @@
 
           <!-- ############################################### -->
 
-          <div id="grupo-vacinas">
+          <div id="grupo-vacinas" style="display: none">
             <form name="vacinas">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Vacinas</h2>
@@ -102,7 +115,7 @@
 
           <!-- ############################################### -->
 
-          <div id="grupo-humor">
+          <div id="grupo-humor" style="display: none">
             <form name="humor">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Humor</h2>
@@ -138,7 +151,7 @@
 
           <!-- ############################################### -->
 
-          <div id="grupo-desejos">
+          <div id="grupo-desejos" style="display: none">
             <form name="desejos">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Desejos</h2>
@@ -162,7 +175,7 @@
 
           <!-- ############################################### -->
 
-          <div id="grupo-album">
+          <div id="grupo-album" style="display: none">
             <form name="album">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Álbum</h2>
@@ -186,7 +199,7 @@
 
           <!-- ############################################### -->
 
-          <div id="grupo-diario">
+          <div id="grupo-diario" style="display: none">
             <form name="diario">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Diário do Bebê</h2>
@@ -219,19 +232,6 @@
               <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
             </form>
           </div> <!-- >>> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
