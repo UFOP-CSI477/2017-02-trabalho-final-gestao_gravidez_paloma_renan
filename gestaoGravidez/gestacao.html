@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Login - Gestão de Gravidez</title>
+    <title>Gestação - Gestão de Gravidez</title>
     <link rel="stylesheet" href=".\css\bootstrap\bootstrap.css">
     <link rel="stylesheet" href=".\css\style.css">
     <script src=".\js\jQuery\jquery-3.2.1.js"></script>
@@ -56,19 +56,19 @@
               </div><br>
               <label for="data" class="label-style">* Data: </label>
               <input type="date" name="data-consulta" class="form-control input-size">
-              <div class="alert alert-danger input-size" style="display: none" id="alertaConsultas">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaConsultas-data">
                 Campo obrigatório.
               </div><br>
 
               <label for="horario" class="label-style">* Horário: </label>
               <input type="time" name="horario-consulta" class="form-control input-size">
-              <div class="alert alert-danger input-size" style="display: none" id="alertaConsultas">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaConsultas-horario">
                 Campo obrigatório.
               </div><br>
 
               <label for="data" class="label-style">* Médico: </label>
               <input type="text" name="medico-consulta" class="form-control input-size">
-              <div class="alert alert-danger input-size" style="display: none" id="alertaConsultas">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaConsultas-medico">
                 Campo obrigatório.
               </div><br>
 
@@ -83,7 +83,7 @@
           <!-- ############################################### -->
 
           <div id="grupo-vacinas" style="display: none">
-            <form name="vacinas">
+            <form name="vacinas" onsubmit="return false;">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Vacinas</h2>
               </div><br>
@@ -116,7 +116,7 @@
           <!-- ############################################### -->
 
           <div id="grupo-humor" style="display: none">
-            <form name="humor">
+            <form name="humor" onsubmit="return false;">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Humor</h2>
               </div><br>
@@ -152,7 +152,7 @@
           <!-- ############################################### -->
 
           <div id="grupo-desejos" style="display: none">
-            <form name="desejos">
+            <form name="desejos" onsubmit="return false;">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Desejos</h2>
               </div><br>
@@ -176,7 +176,7 @@
           <!-- ############################################### -->
 
           <div id="grupo-album" style="display: none">
-            <form name="album">
+            <form name="album" onsubmit="return false;">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Álbum</h2>
               </div><br>
@@ -200,7 +200,7 @@
           <!-- ############################################### -->
 
           <div id="grupo-diario" style="display: none">
-            <form name="diario">
+            <form name="diario" onsubmit="return false;">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Diário do Bebê</h2>
               </div><br>

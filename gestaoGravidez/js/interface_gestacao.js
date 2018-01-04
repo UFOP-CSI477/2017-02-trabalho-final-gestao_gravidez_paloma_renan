@@ -66,17 +66,42 @@ jQuery(document).ready(function($) {
 
     if(!$("input[name='data-consulta']").val())
     {
-      $("#grupo-consultas").addClass("has-error");
-      $("#alertaConsultas").show();
+      $("#alertaConsultas-data").slideDown();
       $("input[name='data-consulta']").val("");
       $("input[name='data-consulta']").focus();
       return;
     }
 
-    $("#grupo-consultas").removeClass("has-error");
-    $("#alertaConsultas").hide();
+    $("#alertaConsultas-data").hide();
 
-  });// fim
+    ////
 
-  
+    if(!$("input[name='horario-consulta']").val())
+    {
+      $("#alertaConsultas-horario").slideDown();
+      $("input[name='horario-consulta']").val("");
+      $("input[name='horario-consulta']").focus();
+      return;
+    }
+
+    $("#alertaConsultas-horario").hide();
+
+    ////
+
+    if(!$("input[name='medico-consulta']").val())
+    {
+      $("#alertaConsultas-medico").slideDown();
+      $("input[name='medico-consulta']").val("");
+      $("input[name='medico-consulta']").focus();
+      return;
+    }
+
+    $("#alertaConsultas-medico").hide();
+
+    $("#grupo-consultas").hide();
+    $("#grupo-info-gestacao").show();
+
+  });
+
+
 });
