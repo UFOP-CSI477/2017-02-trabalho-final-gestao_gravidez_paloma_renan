@@ -40,7 +40,7 @@ body{
 #nav-font-style{
   color: white;
   font-size: 18px;
-  padding-left: 200px;
+  padding-center: 200px;
 }
 
 
@@ -62,6 +62,12 @@ body{
   color: white;
   font-size: 18px;
   padding: 5px;
+  width: 293px;
+  text-align: left;
+}
+
+.menu-button-background:hover{
+  background-color: #28352F;
 }
 
 .bg-form{
@@ -72,4 +78,16 @@ body{
 
 .input-size{
   width: 40%;
+}
+
+li:hover{
+  background-color: #3D5147;
+}
+
+li{
+  border-right: 1px solid #C7DDD3;
+}
+
+li:last-child{
+  border-right: none;
 }
