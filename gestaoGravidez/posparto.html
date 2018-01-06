@@ -5,6 +5,7 @@
     <title>Pós-parto - Gestão de Gravidez</title>
     <link rel="stylesheet" href=".\css\bootstrap\bootstrap.css">
     <link rel="stylesheet" href=".\css\style.css">
+
   </head>
   <body style="overflow-x: hidden;">
 
@@ -32,7 +33,134 @@
         <button type="button" name="vacinas" class="menu-button-background">Vacinas</button><br>
         <button type="button" name="album" class="menu-button-background">Álbum</button>
       </div>
+
+      <!-- #########  -->
+
+      <div class="col-md-9">
+        <div class="container-fluid bg-form">
+
+          <div id="grupo-info-posparto">
+              <div class="row menu-title">
+                <h2 class="h2-style-title">Pós-parto</h2>
+              </div><br>
+              <br><br><br><br><br><br>
+                [Inserir informações sobre pos-parto aqui.]
+              <br><br><br><br><br><br>
+          </div> <!-- >>> -->
+
+
+          <!-- ############################################### -->
+
+          <div id="grupo-fichas">
+            <form name="fichas" onsubmit="return false;">
+              <div class="row menu-title">
+                <h2 class="h2-style-title">Ficha</h2>
+              </div><br>
+
+              <label for="nome" class="label-style">* Nome: </label>
+              <input type="text" name="nome-ficha" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaFicha-nome">
+                Campo obrigatório.
+              </div><br>
+
+              <label for="data" class="label-style">* Data: </label>
+              <input type="date" name="data-ficha" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaFicha-data">
+                Campo obrigatório.
+              </div><br>
+
+              <label for="horario" class="label-style">* Horário: </label>
+              <input type="time" name="horario-ficha" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaFicha-horario">
+                Campo obrigatório.
+              </div><br>
+
+              <label for="local" class="label-style">* Local de nascimento: </label>
+              <input type="text" name="local-ficha" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaFicha-local">
+                Campo obrigatório.
+              </div><br>
+
+              <label for="hospital" class="label-style">* Nome do hospital: </label>
+              <input type="text" name="hospital-ficha" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaFicha-hospital">
+                Campo obrigatório.
+              </div><br>
+
+              <label for="mae" class="label-style">* Mãe: </label>
+              <input type="text" name="mae-ficha" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaFicha-mae">
+                Campo obrigatório.
+              </div><br>
+              <label for="pai" class="label-style">Pai: </label>
+              <input type="text" name="pai-ficha" class="form-control input-size"><br>
+
+              <label for="medico" class="label-style">* Médico cirurgião: </label>
+              <input type="text" name="medico-ficha" class="form-control input-size">
+              <div class="alert alert-danger input-size" style="display: none" id="alertaFicha-medico">
+                Campo obrigatório.
+              </div><br>
+
+              <button type="submit" name="cadastrar-ficha" class="btn login-button" type="submit">Salvar</button>
+              <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
+            </form>
+
+
+            <!-- ############################################### -->
+
+            <div id="grupo-alimentacao">
+              <form name="fichas" onsubmit="return false;">
+                <div class="row menu-title">
+                  <h2 class="h2-style-title">Amamentação & Alimentação</h2>
+                </div><br>
+
+                <label for="data" class="label-style">* Data: </label>
+                <input type="date" name="data-alimentacao" class="form-control input-size">
+                <div class="alert alert-danger input-size" style="display: none" id="alertaAlimentacao-data">
+                  Campo obrigatório.
+                </div><br>
+
+                <label for="horario" class="label-style">* Horário: </label>
+                <input type="time" name="horario-alimentacao" class="form-control input-size">
+                <div class="alert alert-danger input-size" style="display: none" id="alertaAlimentacao-horario">
+                  Campo obrigatório.
+                </div><br>
+
+                <label for="cardapio-alimentacao" class="label-style">* Cardápio: </label>
+                <textarea type="text" name="cardapio-alimentacao" class="form-control input-size"></textarea>
+                <div class="alert alert-danger input-size" style="display: none" id="alertaAlimentacao-cardapio">
+                  Campo obrigatório.
+                </div><br>
+
+                <label for="observacao-alimentacao" class="label-style">* Observação: </label>
+                <textarea type="text" name="observacao-alimentacao" class="form-control input-size"></textarea><br>
+
+
+                <button type="submit" name="cadastrar-alimentacao" class="btn login-button" type="submit">Salvar</button>
+                <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
+              </form>
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
     </div>
+
+    <!-- @@@@ -->
+
+
 
   </body>
 </html>
