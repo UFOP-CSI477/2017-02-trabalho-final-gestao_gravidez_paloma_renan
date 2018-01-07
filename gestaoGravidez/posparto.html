@@ -5,7 +5,8 @@
     <title>Pós-parto - Gestão de Gravidez</title>
     <link rel="stylesheet" href=".\css\bootstrap\bootstrap.css">
     <link rel="stylesheet" href=".\css\style.css">
-
+    <script src=".\js\jQuery\jquery-3.2.1.js"></script>
+    <script src=".\js\interface_posparto.js"></script>
   </head>
   <body style="overflow-x: hidden;">
 
@@ -24,10 +25,10 @@
 
     <div class="row">
       <div class="col-md-2 bg-menu">
-        <button type="button" name="fichas" class="menu-button-background">Ficha</button><br>
+        <button type="button" name="ficha" class="menu-button-background">Ficha</button><br>
         <button type="button" name="alimentacao" class="menu-button-background">Alimentação</button><br>
         <button type="button" name="banho" class="menu-button-background">Banho</button><br>
-        <button type="button" name="consumo" class="menu-button-background">Consumo de itens</button><br>
+        <button type="button" name="itens" class="menu-button-background">Consumo de itens</button><br>
         <button type="button" name="sono" class="menu-button-background">Sono</button><br>
         <button type="button" name="consultas" class="menu-button-background">Consultas</button><br>
         <button type="button" name="vacinas" class="menu-button-background">Vacinas</button><br>
@@ -46,12 +47,12 @@
               <br><br><br><br><br><br>
                 [Inserir informações sobre pos-parto aqui.]
               <br><br><br><br><br><br>
-          </div> <!-- >>> -->
+          </div><!-- >>> -->
 
 
           <!-- ############################################### -->
 
-          <div id="grupo-fichas">
+          <div id="grupo-ficha" style="display: none">
             <form name="ficha" onsubmit="return false;">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Ficha</h2>
@@ -104,11 +105,12 @@
               <button type="submit" name="cadastrar-ficha" class="btn login-button" type="submit">Salvar</button>
               <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
             </form>
+          </div>
 
 
             <!-- ############################################### -->
 
-            <div id="grupo-alimentacao">
+            <div id="grupo-alimentacao" style="display: none">
               <form name="alimentacao" onsubmit="return false;">
                 <div class="row menu-title">
                   <h2 class="h2-style-title">Amamentação & Alimentação</h2>
@@ -139,10 +141,11 @@
                 <button type="submit" name="cadastrar-alimentacao" class="btn login-button" type="submit">Salvar</button>
                 <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
               </form>
+            </div>
 
               <!-- ############################################### -->
 
-              <div id="grupo-banho">
+              <div id="grupo-banho" style="display: none">
                 <form name="banho" onsubmit="return false;">
                   <div class="row menu-title">
                     <h2 class="h2-style-title">Banho</h2>
@@ -167,10 +170,11 @@
                   <button type="submit" name="cadastrar-banho" class="btn login-button" type="submit">Salvar</button>
                   <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
                 </form>
+              </div>
 
                 <!-- ############################################### -->
 
-                <div id="grupo-itens">
+                <div id="grupo-itens" style="display: none">
                   <form name="itens" onsubmit="return false;">
                     <div class="row menu-title">
                       <h2 class="h2-style-title">Consumo de itens</h2>
@@ -206,10 +210,11 @@
                     <button type="submit" name="cadastrar-itens" class="btn login-button" type="submit">Salvar</button>
                     <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
                   </form>
+                </div>
 
                   <!-- ############################################### -->
 
-                  <div id="grupo-sono">
+                  <div id="grupo-sono" style="display: none">
                     <form name="sono" onsubmit="return false;">
                       <div class="row menu-title">
                         <h2 class="h2-style-title">Sono</h2>
@@ -230,10 +235,11 @@
                       <button type="submit" name="cadastrar-sono" class="btn login-button" type="submit">Salvar</button>
                       <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
                     </form>
+                  </div>
 
                     <!-- ############################################### -->
 
-                  <div id="grupo-consulta">
+                  <div id="grupo-consulta" style="display: none">
                     <form name="consulta" onsubmit="return false;">
                       <div class="row menu-title">
                         <h2 class="h2-style-title">Consulta</h2>
@@ -266,7 +272,7 @@
 
                   <!-- ############################################### -->
 
-                  <div id="grupo-vacina">
+                  <div id="grupo-vacina" style="display: none">
                     <form name="vacina" onsubmit="return false;">
                       <div class="row menu-title">
                         <h2 class="h2-style-title">Vacina</h2>
@@ -296,10 +302,11 @@
                       <button type="submit" name="cadastrar-vacina" class="btn login-button" type="submit">Salvar</button>
                       <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
                     </form>
+                  </div>
 
                     <!-- ############################################### -->
 
-                    <div id="grupo-album">
+                    <div id="grupo-album" style="display: none">
                       <form name="album" onsubmit="return false;">
                         <div class="row menu-title">
                           <h2 class="h2-style-title">Álbum</h2>
@@ -312,7 +319,7 @@
                         </div><br>
 
                         <label for="data" class="label-style">* Arquivo: </label>
-                        <input type="file" name="arquivo-album" class="form-control input-size">
+                        <input type="file" name="arquivo-album" class="input-size">
                         <div class="alert alert-danger input-size" style="display: none" id="alertaAlbum-arquivo">
                           Campo obrigatório.
                         </div><br>
@@ -320,14 +327,14 @@
                         <button type="submit" name="cadastrar-album" class="btn login-button" type="submit">Salvar</button>
                         <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
                       </form>
-
-
-        </div>
-      </div>
+                    </div>
 
 
 
-    </div>
+
+        </div> <!-- div container-fluid -->
+      </div> <!-- div 2.a coluna (md-9) -->
+    </div> <!-- div 2.a row -->
 
     <!-- @@@@ -->
 

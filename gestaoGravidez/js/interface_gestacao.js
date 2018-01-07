@@ -1,6 +1,16 @@
 jQuery(document).ready(function($) {
 
+  function limparCampos(){
+    $("form[name='consultas']")[0].reset();
+    $("form[name='vacinas']")[0].reset();
+    $("form[name='humor']")[0].reset();
+    $("form[name='desejos']")[0].reset();
+    $("form[name='album']")[0].reset();
+    $("form[name='diario']")[0].reset();
+  }
+
   $("button[name='consultas']").click(function(event) {
+    limparCampos()
     $("#grupo-info-gestacao").hide();
     $("#grupo-diario").hide();
     $("#grupo-album").hide();
@@ -11,6 +21,7 @@ jQuery(document).ready(function($) {
   });
 
   $("button[name='vacinas']").click(function(event) {
+    limparCampos()
     $("#grupo-info-gestacao").hide();
     $("#grupo-diario").hide();
     $("#grupo-album").hide();
@@ -21,6 +32,7 @@ jQuery(document).ready(function($) {
   });
 
   $("button[name='humor']").click(function(event) {
+    limparCampos()
     $("#grupo-info-gestacao").hide();
     $("#grupo-diario").hide();
     $("#grupo-album").hide();
@@ -31,6 +43,7 @@ jQuery(document).ready(function($) {
   });
 
   $("button[name='desejos']").click(function(event) {
+    limparCampos()
     $("#grupo-info-gestacao").hide();
     $("#grupo-diario").hide();
     $("#grupo-album").hide();
@@ -41,6 +54,7 @@ jQuery(document).ready(function($) {
   });
 
   $("button[name='albuns']").click(function(event) {
+    limparCampos()
     $("#grupo-info-gestacao").hide();
     $("#grupo-diario").hide();
     $("#grupo-desejos").hide();
@@ -51,6 +65,7 @@ jQuery(document).ready(function($) {
   });
 
   $("button[name='diario']").click(function(event) {
+    limparCampos() 
     $("#grupo-info-gestacao").hide();
     $("#grupo-album").hide();
     $("#grupo-desejos").hide();
