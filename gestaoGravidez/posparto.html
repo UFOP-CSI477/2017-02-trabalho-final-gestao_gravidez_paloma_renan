@@ -52,7 +52,7 @@
           <!-- ############################################### -->
 
           <div id="grupo-fichas">
-            <form name="fichas" onsubmit="return false;">
+            <form name="ficha" onsubmit="return false;">
               <div class="row menu-title">
                 <h2 class="h2-style-title">Ficha</h2>
               </div><br>
@@ -109,7 +109,7 @@
             <!-- ############################################### -->
 
             <div id="grupo-alimentacao">
-              <form name="fichas" onsubmit="return false;">
+              <form name="alimentacao" onsubmit="return false;">
                 <div class="row menu-title">
                   <h2 class="h2-style-title">Amamentação & Alimentação</h2>
                 </div><br>
@@ -132,7 +132,7 @@
                   Campo obrigatório.
                 </div><br>
 
-                <label for="observacao-alimentacao" class="label-style">* Observação: </label>
+                <label for="observacao-alimentacao" class="label-style">Observação: </label>
                 <textarea type="text" name="observacao-alimentacao" class="form-control input-size"></textarea><br>
 
 
@@ -140,15 +140,186 @@
                 <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
               </form>
 
+              <!-- ############################################### -->
+
+              <div id="grupo-banho">
+                <form name="banho" onsubmit="return false;">
+                  <div class="row menu-title">
+                    <h2 class="h2-style-title">Banho</h2>
+                  </div><br>
+
+                  <label for="data" class="label-style">* Data: </label>
+                  <input type="date" name="data-banho" class="form-control input-size">
+                  <div class="alert alert-danger input-size" style="display: none" id="alertaBanho-data">
+                    Campo obrigatório.
+                  </div><br>
+
+                  <label for="horario" class="label-style">* Horário: </label>
+                  <input type="time" name="horario-banho" class="form-control input-size">
+                  <div class="alert alert-danger input-size" style="display: none" id="alertaBanho-horario">
+                    Campo obrigatório.
+                  </div><br>
+
+                  <label for="observacao-banho" class="label-style">Observação: </label>
+                  <textarea type="text" name="observacao-banho" class="form-control input-size"></textarea><br>
 
 
+                  <button type="submit" name="cadastrar-banho" class="btn login-button" type="submit">Salvar</button>
+                  <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
+                </form>
 
+                <!-- ############################################### -->
 
+                <div id="grupo-itens">
+                  <form name="itens" onsubmit="return false;">
+                    <div class="row menu-title">
+                      <h2 class="h2-style-title">Consumo de itens</h2>
+                    </div><br>
 
+                    <label for="data" class="label-style">* Data: </label>
+                    <input type="date" name="data-itens" class="form-control input-size">
+                    <div class="alert alert-danger input-size" style="display: none" id="alertaItens-data">
+                      Campo obrigatório.
+                    </div><br>
 
+                    <label for="nome" class="label-style">* Nome: </label>
+                    <input type="text" name="nome-itens" class="form-control input-size">
+                    <div class="alert alert-danger input-size" style="display: none" id="alertaItens-nome">
+                      Campo obrigatório.
+                    </div><br>
 
-          </div>
+                    <label for="local" class="label-style">Local: </label>
+                    <input type="text" name="local-itens" class="form-control input-size"><br>
 
+                    <label for="quantidade" class="label-style">* Quantidade: </label>
+                    <input min="1" type="number" name="quantidade-itens" class="form-control input-size">
+                    <div class="alert alert-danger input-size" style="display: none" id="alertaItens-quantidade">
+                      Campo obrigatório.
+                    </div><br>
+
+                    <label for="preco" class="label-style">* Preço: </label>
+                    <input type="text" name="preco-itens" class="form-control input-size">
+                    <div class="alert alert-danger input-size" style="display: none" id="alertaItens-preco">
+                      Insira o valor.
+                    </div><br>
+
+                    <button type="submit" name="cadastrar-itens" class="btn login-button" type="submit">Salvar</button>
+                    <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
+                  </form>
+
+                  <!-- ############################################### -->
+
+                  <div id="grupo-sono">
+                    <form name="sono" onsubmit="return false;">
+                      <div class="row menu-title">
+                        <h2 class="h2-style-title">Sono</h2>
+                      </div><br>
+
+                      <label for="data" class="label-style">* Data: </label>
+                      <input type="date" name="data-sono" class="form-control input-size">
+                      <div class="alert alert-danger input-size" style="display: none" id="alertaSono-data">
+                        Campo obrigatório.
+                      </div><br>
+
+                      <label for="horario" class="label-style">* Horário: </label>
+                      <input type="time" name="horario-sono" class="form-control input-size">
+                      <div class="alert alert-danger input-size" style="display: none" id="alertaSono-horario">
+                        Campo obrigatório.
+                      </div><br>
+
+                      <button type="submit" name="cadastrar-sono" class="btn login-button" type="submit">Salvar</button>
+                      <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
+                    </form>
+
+                    <!-- ############################################### -->
+
+                  <div id="grupo-consulta">
+                    <form name="consulta" onsubmit="return false;">
+                      <div class="row menu-title">
+                        <h2 class="h2-style-title">Consulta</h2>
+                      </div><br>
+                      <label for="data" class="label-style">* Data: </label>
+                      <input type="date" name="data-consulta" class="form-control input-size">
+                      <div class="alert alert-danger input-size" style="display: none" id="alertaConsulta-data">
+                        Campo obrigatório.
+                      </div><br>
+
+                      <label for="horario" class="label-style">* Horário: </label>
+                      <input type="time" name="horario-consulta" class="form-control input-size">
+                      <div class="alert alert-danger input-size" style="display: none" id="alertaConsulta-horario">
+                        Campo obrigatório.
+                      </div><br>
+
+                      <label for="pediatra" class="label-style">* Pediatra: </label>
+                      <input type="text" name="pediatra-consulta" class="form-control input-size">
+                      <div class="alert alert-danger input-size" style="display: none" id="alertaConsulta-pediatra">
+                        Campo obrigatório.
+                      </div><br>
+
+                      <label for="observacao-consulta" class="label-style">Observação: </label>
+                      <textarea type="text" name="observacao-consulta" class="form-control input-size"></textarea><br>
+
+                      <button type="submit" name="cadastrar-consulta" class="btn login-button" type="submit">Salvar</button>
+                      <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
+                    </form>
+                  </div>
+
+                  <!-- ############################################### -->
+
+                  <div id="grupo-vacina">
+                    <form name="vacina" onsubmit="return false;">
+                      <div class="row menu-title">
+                        <h2 class="h2-style-title">Vacina</h2>
+                      </div><br>
+
+                      <label for="data" class="label-style">* Data: </label>
+                      <input type="date" name="data-vacina" class="form-control input-size">
+                      <div class="alert alert-danger input-size" style="display: none" id="alertaVacina-data">
+                        Campo obrigatório.
+                      </div><br>
+
+                      <label for="horario" class="label-style">* Horário: </label>
+                      <input type="time" name="horario-vacina" class="form-control input-size">
+                      <div class="alert alert-danger input-size" style="display: none" id="alertaVacina-horario">
+                        Campo obrigatório.
+                      </div><br>
+
+                      <label for="nome" class="label-style">* Nome: </label>
+                      <input type="text" name="nome-vacina" class="form-control input-size">
+                      <div class="alert alert-danger input-size" style="display: none" id="alertaVacina-nome">
+                        Campo obrigatório.
+                      </div><br>
+
+                      <label for="observacao-vacina" class="label-style">Observação: </label>
+                      <textarea type="text" name="observacao-vacina" class="form-control input-size"></textarea><br>
+
+                      <button type="submit" name="cadastrar-vacina" class="btn login-button" type="submit">Salvar</button>
+                      <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
+                    </form>
+
+                    <!-- ############################################### -->
+
+                    <div id="grupo-album">
+                      <form name="album" onsubmit="return false;">
+                        <div class="row menu-title">
+                          <h2 class="h2-style-title">Álbum</h2>
+                        </div><br>
+
+                        <label for="data" class="label-style">* Data: </label>
+                        <input type="date" name="data-album" class="form-control input-size">
+                        <div class="alert alert-danger input-size" style="display: none" id="alertaAlbum-data">
+                          Campo obrigatório.
+                        </div><br>
+
+                        <label for="data" class="label-style">* Arquivo: </label>
+                        <input type="file" name="arquivo-album" class="form-control input-size">
+                        <div class="alert alert-danger input-size" style="display: none" id="alertaAlbum-arquivo">
+                          Campo obrigatório.
+                        </div><br>
+
+                        <button type="submit" name="cadastrar-album" class="btn login-button" type="submit">Salvar</button>
+                        <button type="reset" name="limpar" class="btn login-button">Limpar</button><br><br>
+                      </form>
 
 
         </div>
