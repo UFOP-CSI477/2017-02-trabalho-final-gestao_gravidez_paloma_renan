@@ -65,7 +65,7 @@ jQuery(document).ready(function($) {
   });
 
   $("button[name='diario']").click(function(event) {
-    limparCampos() 
+    limparCampos()
     $("#grupo-info-gestacao").hide();
     $("#grupo-album").hide();
     $("#grupo-desejos").hide();
