@@ -5,6 +5,8 @@
     <title>Login - Gestão de Gravidez</title>
     <link rel="stylesheet" href=".\css\bootstrap\bootstrap.css">
     <link rel="stylesheet" href=".\css\style.css">
+    <script src=".\js\jQuery\jquery-3.2.1.js"></script>
+    <script src=".\js\interface_relatorio.js"></script>
   </head>
   <body style="overflow-x: hidden;">
 
@@ -26,7 +28,39 @@
         <button type="button" name="gestacao" class="menu-button-background">Gestação</button><br>
         <button type="button" name="posparto" class="menu-button-background">Pós-parto</button><br>
       </div>
+
+      <!-- #########  -->
+
+      <div class="col-md-9">
+        <div class="container-fluid bg-form">
+
+          <div id="grupo-info-relatorio">
+              <div class="row menu-title">
+                <h2 class="h2-style-title">Relatório</h2>
+              </div><br>
+              <br><br><br><br><br><br>
+                [Inserir informações sobre relatório aqui.]
+              <br><br><br><br><br><br>
+          </div><!-- >>> -->
+
+          <div id="grupo-gestacao" style="display: none">
+              <div class="row menu-title">
+                <h2 class="h2-style-title">Relatório - Gestação</h2>
+              </div><br>
+              <p>[Relatório Gestação.]</p>
+          </div><!-- >>> -->
+
+          <div id="grupo-posparto" style="display: none">
+              <div class="row menu-title">
+                <h2 class="h2-style-title">Relatório - Pós-parto</h2>
+              </div><br>
+              <p>[Relatório Pós-parto.]</p>
+          </div><!-- >>> -->
+
+
     </div>
+
+
 
   </body>
 </html>
