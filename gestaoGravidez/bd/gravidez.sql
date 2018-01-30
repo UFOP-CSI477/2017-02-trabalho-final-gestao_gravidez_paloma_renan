@@ -15,97 +15,119 @@ CREATE SCHEMA IF NOT EXISTS `gravidez` DEFAULT CHARACTER SET utf8 ;
 USE `gravidez` ;
 
 -- -----------------------------------------------------
--- Table `gravidez`.`login`
+-- Table `gravidez`.`gAlbuns`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`login` (
-  `idlogin` INT NOT NULL,
-  `email` VARCHAR(45) NOT NULL,
-  `senha` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`idlogin`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `gravidez`.`consultasGestacao`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`consultasGestacao` (
-  `id` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `gravidez`.`gAlbuns` (
+  `id` INT(11) NOT NULL,
   `data` DATE NOT NULL,
-  `hora` TIME(6) NOT NULL,
+  `foto` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `gravidez`.`pAlbuns`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `gravidez`.`pAlbuns` (
+  `id` INT(11) NOT NULL,
+  `data` DATE NOT NULL,
+  `foto` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `gravidez`.`pAlimentacoes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `gravidez`.`pAlimentacoes` (
+  `id` INT(11) NOT NULL,
+  `cardapio` VARCHAR(100) NOT NULL,
+  `data` DATE NOT NULL,
+  `hora` TIME NOT NULL,
+  `obs` VARCHAR(100) NOT NULL,
+  `sugerido` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `gravidez`.`pBanhos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `gravidez`.`pBanhos` (
+  `id` INT(11) NOT NULL,
+  `data` DATE NOT NULL,
+  `hora` TIME NOT NULL,
+  `observacao` VARCHAR(100) NULL DEFAULT NULL,
+  `sugerido` VARCHAR(100) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `gravidez`.`gConsultas`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `gravidez`.`gConsultas` (
+  `id` INT(11) NOT NULL,
+  `data` DATE NOT NULL,
+  `hora` TIME NOT NULL,
   `medico` VARCHAR(45) NOT NULL,
   `obs` VARCHAR(100) NOT NULL,
   `sugerido` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `gravidez`.`vacinasGestacao`
+-- Table `gravidez`.`pConsultas`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`vacinasGestacao` (
-  `id` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `gravidez`.`pConsultas` (
+  `id` INT(11) NOT NULL,
   `data` DATE NOT NULL,
-  `hora` TIME(6) NOT NULL,
-  `nome` VARCHAR(45) NOT NULL,
+  `hora` TIME NOT NULL,
+  `pediatra` VARCHAR(45) NOT NULL,
   `obs` VARCHAR(100) NOT NULL,
-  `sugerido` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `gravidez`.`humorGestacao`
+-- Table `gravidez`.`gDesejos`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`humorGestacao` (
-  `id` INT NOT NULL,
-  `data` DATE NOT NULL,
-  `nivel` CHAR(1) NOT NULL,
-  `descricao` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `gravidez`.`desejosGestacao`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`desejosGestacao` (
-  `id` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `gravidez`.`gDesejos` (
+  `id` INT(11) NOT NULL,
   `data` DATE NOT NULL,
   `descricao` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `gravidez`.`albumGestacao`
+-- Table `gravidez`.`gDiarios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`albumGestacao` (
-  `id` INT NOT NULL,
-  `data` DATE NOT NULL,
-  `foto` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `gravidez`.`diarioGestacao`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`diarioGestacao` (
-  `id` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `gravidez`.`gDiarios` (
+  `id` INT(11) NOT NULL,
   `data` DATE NOT NULL,
   `peso` CHAR(10) NOT NULL,
   `altura` CHAR(10) NOT NULL,
   `posicao` VARCHAR(45) NOT NULL,
   `descricao` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `gravidez`.`fichaPos`
+-- Table `gravidez`.`pFichas`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`fichaPos` (
-  `id` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `gravidez`.`pFichas` (
+  `id` INT(11) NOT NULL,
   `nome` VARCHAR(45) NOT NULL,
   `foto` VARCHAR(100) NOT NULL,
   `nascimento` DATE NOT NULL,
@@ -115,96 +137,89 @@ CREATE TABLE IF NOT EXISTS `gravidez`.`fichaPos` (
   `genitor2` VARCHAR(100) NOT NULL,
   `medico` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `gravidez`.`alimentacaoPos`
+-- Table `gravidez`.`gHumores`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`alimentacaoPos` (
-  `id` INT NOT NULL,
-  `cardapio` VARCHAR(100) NOT NULL,
+CREATE TABLE IF NOT EXISTS `gravidez`.`gHumores` (
+  `id` INT(11) NOT NULL,
   `data` DATE NOT NULL,
-  `hora` TIME(6) NOT NULL,
-  `obs` VARCHAR(100) NOT NULL,
-  `sugerido` VARCHAR(100) NOT NULL,
+  `nivel` CHAR(1) NOT NULL,
+  `descricao` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `gravidez`.`banhoPos`
+-- Table `gravidez`.`pItens`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`banhoPos` (
-  `id` INT NOT NULL,
-  `data` DATE NOT NULL,
-  `hora` TIME(6) NOT NULL,
-  `observacao` VARCHAR(100) NULL,
-  `sugerido` VARCHAR(100) NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `gravidez`.`itensPos`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`itensPos` (
-  `id` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `gravidez`.`pItens` (
+  `id` INT(11) NOT NULL,
   `nome` VARCHAR(45) NOT NULL,
-  `quantidade` INT NOT NULL,
+  `quantidade` INT(11) NOT NULL,
   `data` DATE NOT NULL,
   `local` VARCHAR(45) NOT NULL,
   `valor` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `gravidez`.`sonoPos`
+-- Table `gravidez`.`login`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`sonoPos` (
-  `id` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `gravidez`.`login` (
+  `idlogin` INT(11) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `senha` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idlogin`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `gravidez`.`pSonos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `gravidez`.`pSonos` (
+  `id` INT(11) NOT NULL,
   `data` DATE NOT NULL,
-  `hora` TIME(6) NOT NULL,
+  `hora` TIME NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `gravidez`.`consultasPos`
+-- Table `gravidez`.`gVacinas`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`consultasPos` (
-  `id` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `gravidez`.`gVacinas` (
+  `id` INT(11) NOT NULL,
   `data` DATE NOT NULL,
-  `hora` TIME(6) NOT NULL,
-  `pediatra` VARCHAR(45) NOT NULL,
+  `hora` TIME NOT NULL,
+  `nome` VARCHAR(45) NOT NULL,
   `obs` VARCHAR(100) NOT NULL,
+  `sugerido` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `gravidez`.`vacinasPos`
+-- Table `gravidez`.`pVacinas`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`vacinasPos` (
-  `id` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `gravidez`.`pVacinas` (
+  `id` INT(11) NOT NULL,
   `data` DATE NOT NULL,
-  `hora` TIME(6) NOT NULL,
+  `hora` TIME NOT NULL,
   `nome` VARCHAR(45) NOT NULL,
   `obs` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `gravidez`.`albumPos`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`albumPos` (
-  `id` INT NOT NULL,
-  `data` DATE NOT NULL,
-  `foto` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
