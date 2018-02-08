@@ -287,3 +287,26 @@ INSERT INTO `gHumores` (`id`, `data`, `nivel`, `descricao`) VALUES(3, '2017-11-0
 INSERT INTO `gHumores` (`id`, `data`, `nivel`, `descricao`) VALUES(4, '2017-12-01', '3', 'As séries que assisti me deixaram muito sensível');
 INSERT INTO `gHumores` (`id`, `data`, `nivel`, `descricao`) VALUES(5, '2018-01-01', '1', 'Estou me sentindo muito bem hoje');
 
+INSERT INTO `pItens` (`id`, `nome`, `quantidade`, `data`, `local`, `valor`) VALUES(1, 'chupeta', 1, '2018-02-10', 'Drogaria Araujo', 'R$ 11,50');
+INSERT INTO `pItens` (`id`, `nome`, `quantidade`, `data`, `local`, `valor`) VALUES(2, 'mamadeira', 2, '2018-02-10', 'Drogaria Araujo', 'R$ 30,50');
+INSERT INTO `pItens` (`id`, `nome`, `quantidade`, `data`, `local`, `valor`) VALUES(3, 'toalha de rosto', 5, '2018-02-10', 'Drogaria Araujo', 'R$ 10,20');
+INSERT INTO `pItens` (`id`, `nome`, `quantidade`, `data`, `local`, `valor`) VALUES(4, 'pacote de fraldas', 5, '2018-02-10', 'Drogaria Araujo', 'R$ 150,50');
+INSERT INTO `pItens` (`id`, `nome`, `quantidade`, `data`, `local`, `valor`) VALUES(5, 'lenço umidecido', 1, '2018-02-10', 'Drogaria Araujo', 'R$ 7,10');
+
+INSERT INTO `pSonos` (`id`, `data`, `hora`) VALUES(1, '2018-01-25', '11:00');
+INSERT INTO `pSonos` (`id`, `data`, `hora`) VALUES(2, '2018-01-25', '13:10');
+INSERT INTO `pSonos` (`id`, `data`, `hora`) VALUES(3, '2018-01-25', '16:50');
+INSERT INTO `pSonos` (`id`, `data`, `hora`) VALUES(4, '2018-01-25', '18:00');
+INSERT INTO `pSonos` (`id`, `data`, `hora`) VALUES(5, '2018-01-25', '21:00');
+
+INSERT INTO `gVacinas` (`id`, `data`, `hora`, `nome`, `obs`, `sugerido`) VALUES(1, '2017-09-01', '11:00', 'Primeira dose', 'febre', '*É muito importante que a grávida tome todas as vacinas');
+INSERT INTO `gVacinas` (`id`, `data`, `hora`, `nome`, `obs`, `sugerido`) VALUES(2, '2017-10-01', '11:00', 'Segunda dose', 'sonolencia', '*É muito importante que a grávida tome todas as vacinas');
+INSERT INTO `gVacinas` (`id`, `data`, `hora`, `nome`, `obs`, `sugerido`) VALUES(3, '2017-11-01', '11:00', 'Terceira dose', 'Sem sintomas de efeitos colaterais', '*É muito importante que a grávida tome todas as vacinas');
+INSERT INTO `gVacinas` (`id`, `data`, `hora`, `nome`, `obs`, `sugerido`) VALUES(4, '2017-12-01', '11:00', 'Quarta dose', 'dores no local da vacina', '*É muito importante que a grávida tome todas as vacinas');
+INSERT INTO `gVacinas` (`id`, `data`, `hora`, `nome`, `obs`, `sugerido`) VALUES(5, '2017-01-01', '11:00', 'Quinta dose', 'sonolencia', '*É muito importante que a grávida tome todas as vacinas');
+
+INSERT INTO `pVacinas` (`id`, `data`, `hora`, `nome`, `obs`) VALUES(1, '2018-02-01', '11:00', 'BCG', 'febre');
+INSERT INTO `pVacinas` (`id`, `data`, `hora`, `nome`, `obs`) VALUES(2, '2018-03-01', '11:00', 'febre amarela', 'sonolencia');
+INSERT INTO `pVacinas` (`id`, `data`, `hora`, `nome`, `obs`) VALUES(3, '2018-04-01', '11:00', 'tétano', 'Sem sintomas de efeitos colaterais');
+INSERT INTO `pVacinas` (`id`, `data`, `hora`, `nome`, `obs`) VALUES(4, '2018-05-01', '11:00', 'rotina', 'febre');
+INSERT INTO `pVacinas` (`id`, `data`, `hora`, `nome`, `obs`) VALUES(5, '2018-06-01', '11:00', 'rotina', 'sonolencia');
