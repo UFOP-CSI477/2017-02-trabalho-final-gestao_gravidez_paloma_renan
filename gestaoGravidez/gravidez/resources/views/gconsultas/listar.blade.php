@@ -16,7 +16,7 @@
         <th>Dica</th>
       </tr>
 
-      @foreach($galbun as $gal)
+      @foreach($gconsulta as $gco)
 
       <tr>
         <td>{{ $gco->id }}</td>
