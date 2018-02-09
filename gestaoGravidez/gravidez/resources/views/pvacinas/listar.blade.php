@@ -1,23 +1,28 @@
-@extends ('layout.principal')
+@extends ('layouts.html')
 
-@section ('conteudo')
+@section('body')
 
-<h1>Lista de Cidades</h1>
+<h1><p align="center">Vacinas do Bebê</p></h1><br><br>
 
-    <table>
+    <table class="table table-striped table-bordered table-hover table-condensed">
 
       <!--Cabeçalho-->
       <tr>  
-        <th>Código</th>
+        <th>ID</th>
+        <th>Data</th>
+        <th>Horário</th>
         <th>Nome</th>
+        <th>Observação</th>
       </tr>
 
-      <!-- Dados dos alunos //-->
-      @foreach($cidades as $cidade)
+      @foreach($pvacina as $pva)
 
       <tr>
-        <td>{{ $cidade->id }}</td>
-        <td>{{ $cidade->nome }}</td>
+        <td>{{ $pva->id }}</td>
+        <td>{{ $pva->data }}</td>
+        <td>{{ $pva->hora }}</td>
+        <td>{{ $pva->nome }}</td>
+        <td>{{ $pva->obs }}</td>
       </tr>
 
       @endforeach
