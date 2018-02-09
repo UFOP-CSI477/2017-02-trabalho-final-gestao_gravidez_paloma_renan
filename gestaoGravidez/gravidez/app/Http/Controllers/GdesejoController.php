@@ -111,4 +111,14 @@ class GdesejoController extends Controller
         return redirect()->action('GdesejoController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $gadesejo = Gdesejo::all();
+
+        //Invocar a view passando os dados
+        return view ('gdesejos.listar') -> with ('gdesejo', $gdesejo);
+
+    }
 }

@@ -113,4 +113,14 @@ class PconsultaController extends Controller
         return redirect()->action('PconsultaController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $pconsulta = Pconsulta::all();
+
+        //Invocar a view passando os dados
+        return view ('pconsultas.listar') -> with ('pconsulta', $pconsulta);
+
+    }
 }

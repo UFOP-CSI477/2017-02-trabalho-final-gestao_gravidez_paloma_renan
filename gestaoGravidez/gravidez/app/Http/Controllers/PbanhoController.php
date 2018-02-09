@@ -113,4 +113,14 @@ class PbanhoController extends Controller
         return redirect()->action('PbanhoController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $pbanho = Pbanho::all();
+
+        //Invocar a view passando os dados
+        return view ('pbanhos.listar') -> with ('pbanhos', $pbanho);
+
+    }
 }

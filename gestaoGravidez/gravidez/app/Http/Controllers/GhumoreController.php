@@ -112,4 +112,14 @@ class GhumoreController extends Controller
         return redirect()->action('GhumoreController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $ghumore = Ghumore::all();
+
+        //Invocar a view passando os dados
+        return view ('ghumores.listar') -> with ('ghumore', $ghumore);
+
+    }
 }

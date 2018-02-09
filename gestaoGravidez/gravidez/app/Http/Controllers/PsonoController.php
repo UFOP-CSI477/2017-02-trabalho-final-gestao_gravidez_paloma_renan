@@ -111,4 +111,14 @@ class PsonoController extends Controller
         return redirect()->action('PsonoController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $psono = Psono::all();
+
+        //Invocar a view passando os dados
+        return view ('psonos.listar') -> with ('psono', $psono);
+
+    }
 }

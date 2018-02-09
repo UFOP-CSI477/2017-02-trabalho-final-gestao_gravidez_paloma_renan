@@ -114,4 +114,14 @@ class GvacinaController extends Controller
         return redirect()->action('GvacinaController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $gvacina = Gvacina::all();
+
+        //Invocar a view passando os dados
+        return view ('gvacinas.listar') -> with ('gvacina', $gvacina);
+
+    }
 }

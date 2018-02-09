@@ -114,4 +114,14 @@ class PitenController extends Controller
         return redirect()->action('PitenController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $piten = Piten::all();
+
+        //Invocar a view passando os dados
+        return view ('pitens.listar') -> with ('piten', $piten);
+
+    }
 }

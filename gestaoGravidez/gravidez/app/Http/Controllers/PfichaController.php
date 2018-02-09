@@ -117,4 +117,14 @@ class PfichaController extends Controller
         return redirect()->action('PfichaController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $pficha = Pficha::all();
+
+        //Invocar a view passando os dados
+        return view ('pfichas.listar') -> with ('pficha', $pficha);
+
+    }
 }

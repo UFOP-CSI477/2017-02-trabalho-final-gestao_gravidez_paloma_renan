@@ -114,4 +114,14 @@ class GconsultaController extends Controller
         return redirect()->action('GconsultaController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $gconsulta = Gconsulta::all();
+
+        //Invocar a view passando os dados
+        return view ('gconsultas.listar') -> with ('gconsulta', $gconsulta);
+
+    }
 }

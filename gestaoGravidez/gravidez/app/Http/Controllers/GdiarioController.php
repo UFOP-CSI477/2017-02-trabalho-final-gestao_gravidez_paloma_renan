@@ -114,4 +114,14 @@ class GdiarioController extends Controller
         return redirect()->action('GdiarioController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $gdiario = Gdiario::all();
+
+        //Invocar a view passando os dados
+        return view ('gdiarios.listar') -> with ('gdiario', $gdiario);
+
+    }
 }

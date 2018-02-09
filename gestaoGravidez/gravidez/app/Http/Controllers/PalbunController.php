@@ -111,4 +111,14 @@ class PalbunController extends Controller
         return redirect()->action('PalbunController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $palbun = Palbun::all();
+
+        //Invocar a view passando os dados
+        return view ('palbuns.listar') -> with ('palbun', $palbun);
+
+    }
 }

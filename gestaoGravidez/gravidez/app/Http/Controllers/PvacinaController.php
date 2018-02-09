@@ -113,4 +113,14 @@ class PvacinaController extends Controller
         return redirect()->action('PvacinaController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $pvacina = Pvacina::all();
+
+        //Invocar a view passando os dados
+        return view ('pvacinas.listar') -> with ('pvacina', $pvacina);
+
+    }
 }

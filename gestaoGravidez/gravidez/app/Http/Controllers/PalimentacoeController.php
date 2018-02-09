@@ -114,4 +114,14 @@ class PalimentacoeController extends Controller
         return redirect()->action('PalimentacoeController@index');
 
     }
+
+    public function listar() {
+
+        //Acesso ao modelo e recuperação dos dados
+        $palimentacoe = Palimentacoe::all();
+
+        //Invocar a view passando os dados
+        return view ('palimentacoes.listar') -> with ('palimentacoe', $palimentacoe);
+
+    }
 }
