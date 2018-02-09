@@ -120,7 +120,7 @@ class PbanhoController extends Controller
         $pbanho = Pbanho::all();
 
         //Invocar a view passando os dados
-        return view ('pbanhos.listar') -> with ('pbanhos', $pbanho);
+        return view ('pbanhos.listar') -> with ('pbanho', $pbanho);
 
     }
 }

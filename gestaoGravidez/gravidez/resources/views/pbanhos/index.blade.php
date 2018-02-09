@@ -56,6 +56,7 @@
       </table>
 
       <a type="button" class="btn btn-success" href="{{route('pbanho.create')}}">Novo</a>
+      <a align="center" type="button" class="btn btn-success" href="http://localhost:8000/menuposparto">Voltar</a>
 
     </div>
 

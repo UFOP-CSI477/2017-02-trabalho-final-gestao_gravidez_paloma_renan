@@ -11,7 +11,7 @@
         <th>ID</th>
         <th>Data</th>
         <th>Nível</th>
-        <th>Descrição</th>
+        <th>Descrição (1-Feliz, 2-Triste, 3-Emotiva)</th>
       </tr>
 
       @foreach($ghumore as $ghu)
@@ -26,5 +26,8 @@
       @endforeach
 
     </table>
+
+        <a align="center" type="button" class="btn btn-success" href="http://localhost:8000/menurelatorio">Voltar</a>
+
 
     @endsection

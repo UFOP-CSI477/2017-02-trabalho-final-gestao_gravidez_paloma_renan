@@ -10,9 +10,9 @@
       <tr>  
         <th>ID</th>
         <th>Data</th>
-        <th>Peso</th>
-        <th>Altura</th>
-        <th>Posição</th>
+        <th>Peso da mãe</th>
+        <th>Altur da barriga</th>
+        <th>Posição do bebê</th>
         <th>Descrição</th>
       </tr>
 
@@ -30,5 +30,8 @@
       @endforeach
 
     </table>
+
+        <a align="center" type="button" class="btn btn-success" href="http://localhost:8000/menurelatorio">Voltar</a>
+
 
     @endsection

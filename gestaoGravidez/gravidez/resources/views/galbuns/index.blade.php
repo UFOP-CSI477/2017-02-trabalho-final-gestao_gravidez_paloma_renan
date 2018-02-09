@@ -52,6 +52,8 @@
       </table>
 
       <a type="button" class="btn btn-success" href="{{route('galbun.create')}}">Novo</a>
+          <a align="center" type="button" class="btn btn-success" href="http://localhost:8000/menugravidez">Voltar</a>
+
 
     </div>
 

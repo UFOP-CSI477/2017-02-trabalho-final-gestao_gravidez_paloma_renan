@@ -26,7 +26,7 @@
      <li><p align="center"><a href="{{ url('listar/pfichas') }}">PÓS PARTO - FICHA COMPLETA DO BEBÊ</a></li></p>
      <li><p align="center"><a href="{{ url('listar/pitens') }}">PÓS PARTO - COMPRA DE ITENS</a></li></p>
      <li><p align="center"><a href="{{ url('listar/psonos') }}">PÓS PARTO - SONO DO BEBÊ</a></li></p>
-     <li><p align="center"><a href="{{ url('listar/vacinas') }}">PÓS PARTO - VACINAS</a></li></p>
+     <li><p align="center"><a href="{{ url('listar/pvacinas') }}">PÓS PARTO - VACINAS</a></li></p>
      <li><p align="center"><a href="http://localhost:8000/menu">VOLTAR</a></li></p>
   </ul>
 </nav></p>
