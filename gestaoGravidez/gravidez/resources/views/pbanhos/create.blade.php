@@ -69,6 +69,8 @@
 
     {!!Form::close()!!}
 
+    <a align="center" type="button" class="btn btn-success" href="http://localhost:8000/pbanho">Voltar</a>
+
   </div>
   
 @stop

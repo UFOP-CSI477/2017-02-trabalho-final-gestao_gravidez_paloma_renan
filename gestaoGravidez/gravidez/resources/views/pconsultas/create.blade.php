@@ -72,6 +72,8 @@
 
     {!!Form::close()!!}
 
+    <a align="center" type="button" class="btn btn-success" href="http://localhost:8000/pconsulta">Voltar</a>
+
   </div>
   
 @stop

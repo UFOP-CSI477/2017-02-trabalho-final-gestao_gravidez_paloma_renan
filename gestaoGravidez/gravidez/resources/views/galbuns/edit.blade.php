@@ -40,6 +40,7 @@
       {!! Form::label('foto', 'Foto') !!}
       {!! Form::input('foto', $galbun->foto, [
           'class' => "form-control input-md", 
+          'type' => 'input',
         ]) 
       !!}
 

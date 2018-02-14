@@ -22,11 +22,11 @@
       </tr>
 
 
-       @foreach($galbuns as $galbun)
+       @foreach($pvacinas as $pvacina)
 
           {!!Form::open([
             'method' => 'delete',
-            'route' => ['pvacinas.destroy', $pvacina->id]
+            'route' => ['pvacina.destroy', $pvacina->id]
             ])
           !!}
 
@@ -56,6 +56,8 @@
       </table>
 
       <a type="button" class="btn btn-success" href="{{route('pvacina.create')}}">Novo</a>
+      <a align="center" type="button" class="btn btn-success" href="http://localhost:8000/menuposparto">Voltar</a>
+
 
     </div>
 

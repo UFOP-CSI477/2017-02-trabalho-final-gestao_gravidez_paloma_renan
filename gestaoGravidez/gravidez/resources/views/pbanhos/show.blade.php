@@ -13,7 +13,6 @@
       <h1>{{$pbanho->id}}</h1>
       <h1>{{$pbanho->data}}</h1>
       <h1>{{$pbanho->hora}}</h1>
-      <h1>{{$pbanho->observacao}}</h1>
       <h1>{{$pbanho->sugerido}}</h1>
       
       <a type="button" class="btn btn-warning" href="{{route('pbanho.edit', $pbanho->id)}}">Editar</a>

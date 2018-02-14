@@ -16,13 +16,12 @@
           <th>#</th>
           <th>Data</th>
           <th>Horário</th>
-          <th>Observação</th>
           <th>Dica</th>
           <th>Ações</th>
       </tr>
 
 
-       @foreach($gbanhos as $gbanho)
+       @foreach($pbanhos as $pbanho)
 
           {!!Form::open([
             'method' => 'delete',
@@ -35,7 +34,6 @@
               <td><b>{{$pbanho->id}}</b></td>
               <td>{{$pbanho->data}}</td>
               <td>{{$pbanho->hora}}</td>
-              <td>{{$pbanho->observacao}}</td>
               <td>{{$pbanho->sugerido}}</td>
               <td>
 

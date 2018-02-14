@@ -26,7 +26,7 @@
     <div class = "form-group">
 
       {!! Form::label('data', 'Data') !!}
-      {!! Form::text('data', 'time', $galbun->data, [
+      {!! Form::text('data', 'time', $gconsulta->data, [
         'class' => "form-control input-md",
         'required' => '',
           'type' => 'time',

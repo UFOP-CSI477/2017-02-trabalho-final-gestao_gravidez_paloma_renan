@@ -11,7 +11,6 @@
         <th>ID</th>
         <th>Data</th>
         <th>Horário</th>
-        <th>Observação</th>
         <th>Dica</th>
       </tr>
 
@@ -21,7 +20,6 @@
         <td>{{ $pba->id }}</td>
         <td>{{ $pba->data }}</td>
         <td>{{ $pba->hora }}</td>
-        <td>{{ $pba->obs }}</td>
         <td>{{ $pba->sugerido }}</td>
       </tr>
 
