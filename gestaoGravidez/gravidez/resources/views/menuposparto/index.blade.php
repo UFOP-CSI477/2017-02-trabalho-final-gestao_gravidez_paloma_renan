@@ -11,7 +11,6 @@
 
   <nav id="menu1" style="text-align: center; font-family: GalanoGrotesque">
   <ul>
-     <li><p align="center"><a href="http://localhost:8000/palbun">ÁLBUM</a></li></p>
      <li><p align="center"><a href="http://localhost:8000/palimentacoe">ALIMENTAÇÕES</a></li></p>
      <li><p align="center"><a href="http://localhost:8000/pbanho">BANHOS</a></li></p>
      <li><p align="center"><a href="http://localhost:8000/pconsulta">CONSULTAS</a></li></p>

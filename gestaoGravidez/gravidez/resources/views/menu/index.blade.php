@@ -7,7 +7,7 @@
     <div class="container">
     </div>
 
-    <h1 style="text-align: center; font-family: GalanoGrotesque">Bem vindo ao sistema <p><p> de gravidez!</h1><br><br><br><br>
+    <h1 style="text-align: center; font-family: GalanoGrotesque">BEM VINDO AO SISTEMA <p><p> DE GRAVIDEZ!</h1><br><br><br><br>
 
   <nav id="menu" style="text-align: center; font-family: GalanoGrotesque">
   <ul>

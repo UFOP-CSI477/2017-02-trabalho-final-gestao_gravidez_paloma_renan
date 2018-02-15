@@ -16,14 +16,12 @@ Route::get('/', function () {
 });
 
 
-Route::resource('galbun', 'GalbunController');
 Route::resource('gconsulta', 'GconsultaController');
 Route::resource('gdesejo', 'GdesejoController');
 Route::resource('gdiario', 'GdiarioController');
 Route::resource('ghumore', 'GhumoreController');
 Route::resource('gvacina', 'GvacinaController');
 
-Route::resource('palbun', 'PalbunController');
 Route::resource('palimentacoe', 'PalimentacoeController');
 Route::resource('pbanho', 'PbanhoController');
 Route::resource('pconsulta', 'PconsultaController');
@@ -32,13 +30,11 @@ Route::resource('piten', 'PitenController');
 Route::resource('psono', 'PsonoController');
 Route::resource('pvacina', 'PvacinaController');
 
-Route::get('listar/galbuns', 'GalbunController@listar');
 Route::get('listar/gconsultas', 'GconsultaController@listar');
 Route::get('listar/gdesejos', 'GdesejoController@listar');
 Route::get('listar/gdiarios', 'GdiarioController@listar');
 Route::get('listar/ghumores', 'GhumoreController@listar');
 Route::get('listar/gvacinas', 'GvacinaController@listar');
-Route::get('listar/palbuns', 'PalbunController@listar');
 Route::get('listar/palimentacoes', 'PalimentacoeController@listar');
 Route::get('listar/pbanhos', 'PbanhoController@listar');
 Route::get('listar/pconsultas', 'PconsultaController@listar');
