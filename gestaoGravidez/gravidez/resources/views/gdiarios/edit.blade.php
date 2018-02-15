@@ -7,7 +7,7 @@
     {!!Form::model($gdiario, [
       'method' => 'patch',
       'route' => ['gdiario.update', $gdiario->id],
-      'class' => "form-horizontal",
+      'class' => 'form-horizontal',
       ])
     !!}
 
@@ -22,59 +22,65 @@
 
     </div> 
     
-
     <div class = "form-group">
 
       {!! Form::label('data', 'Data') !!}
-      {!! Form::text('data', 'time', $gdiario->data, [
+      {!! Form::text('data', $gdiario->data, [
         'class' => "form-control input-md",
-        'required' => '',
-          'type' => 'time',
+        'placeholder' => "Insira a data",
+        'required' => "",
         ]) 
       !!}
 
-    </div>
+    </div> 
 
-     <div class = "form-group"> 
+    <div class = "form-group">
 
       {!! Form::label('peso', 'Peso') !!}
-      {!! Form::input('peso', $gdiario->peso, [
-          'class' => "form-control input-md", 
+      {!! Form::text('peso', $gdiario->peso, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira o peso",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
-
-       <div class = "form-group"> 
+    <div class = "form-group">
 
       {!! Form::label('altura', 'Altura') !!}
-      {!! Form::input('altura', $gdiario->altura, [
-          'class' => "form-control input-md", 
+      {!! Form::text('altura', $gdiario->altura, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira a altura",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
-       <div class = "form-group"> 
+    <div class = "form-group">
 
       {!! Form::label('posicao', 'Posição') !!}
-      {!! Form::input('posicao', $gdiario->posicao, [
-          'class' => "form-control input-md", 
+      {!! Form::text('posicao', $gdiario->posicao, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira a posição do bebê",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
-       <div class = "form-group"> 
+    <div class = "form-group">
 
-      {!! Form::label('descricao', 'Descrição') !!}
-      {!! Form::input('descricao', $gdiario->descricao, [
-          'class' => "form-control input-md", 
+      {!! Form::label('descricao', 'descrição') !!}
+      {!! Form::text('descricao', $gdiario->descricao, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira uma descrição",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
     <div class = "form-group">
 

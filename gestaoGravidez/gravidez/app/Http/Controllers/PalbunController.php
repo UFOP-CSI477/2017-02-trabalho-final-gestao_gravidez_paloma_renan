@@ -90,7 +90,7 @@ class PalbunController extends Controller
 
         $palbun->data = $request->data;
         $palbun->foto = $request->foto;
-        $event->save();
+        $palbun->save();
 
         return redirect()->action('PalbunController@index');
     }

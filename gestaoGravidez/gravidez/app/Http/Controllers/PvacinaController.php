@@ -92,7 +92,7 @@ class PvacinaController extends Controller
         $pvacina->hora = $request->hora;
         $pvacina->nome = $request->nome;
         $pvacina->obs = $request->obs;
-        $event->save();
+        $pvacina->save();
 
         return redirect()->action('PvacinaController@index');
     }

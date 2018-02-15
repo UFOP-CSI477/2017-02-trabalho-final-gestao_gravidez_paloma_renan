@@ -93,7 +93,7 @@ class PalimentacoeController extends Controller
         $palimentacoe->hora = $request->hora;
         $palimentacoe->obs = $request->obs;
         $palimentacoe->sugerido = $request->sugerido;
-        $event->save();
+        $palimentacoe->save();
 
         return redirect()->action('PalimentacoeController@index');
     }

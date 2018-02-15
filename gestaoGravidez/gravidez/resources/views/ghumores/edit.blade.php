@@ -7,7 +7,7 @@
     {!!Form::model($ghumore, [
       'method' => 'patch',
       'route' => ['ghumore.update', $ghumore->id],
-      'class' => "form-horizontal",
+      'class' => 'form-horizontal',
       ])
     !!}
 
@@ -22,38 +22,43 @@
 
     </div> 
     
-
     <div class = "form-group">
 
       {!! Form::label('data', 'Data') !!}
-      {!! Form::text('data', 'time', $ghumore->data, [
+      {!! Form::text('data', $ghumore->data, [
         'class' => "form-control input-md",
-        'required' => '',
-          'type' => 'time',
+        'placeholder' => "Insira a data",
+        'required' => "",
         ]) 
       !!}
 
-    </div>
+    </div> 
 
-     <div class = "form-group"> 
+    <div class = "form-group">
 
-      {!! Form::label('nivel', 'Nível do humor') !!}
-      {!! Form::input('nivel', $ghumore->nivel, [
-          'class' => "form-control input-md", 
+      {!! Form::label('nivel', 'Nível') !!}
+      {!! Form::text('nivel', $ghumore->nivel, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira o nível do humor",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
-        <div class = "form-group"> 
+    
+
+    <div class = "form-group">
 
       {!! Form::label('descricao', 'Descrição') !!}
-      {!! Form::input('descricao', $ghumore->descricao, [
-          'class' => "form-control input-md", 
+      {!! Form::text('descricao', $ghumore->descricao, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira uma descrição",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
     <div class = "form-group">
 

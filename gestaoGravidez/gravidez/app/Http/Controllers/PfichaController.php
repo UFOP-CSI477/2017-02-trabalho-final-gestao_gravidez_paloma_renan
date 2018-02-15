@@ -96,7 +96,7 @@ class PfichaController extends Controller
         $pficha->genitor1 = $request->genitor1;
         $pficha->genitor2 = $request->genitor2;
         $pficha->medico = $request->medico;
-        $event->save();
+        $pficha->save();
 
         return redirect()->action('PfichaController@index');
     }

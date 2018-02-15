@@ -92,7 +92,7 @@ class PbanhoController extends Controller
         $pbanho->hora = $request->hora;
         $pbanho->observacao = $request->observacao;
         $pbanho->sugerido = $request->sugerido;
-        $event->save();
+        $pbanho->save();
 
         return redirect()->action('PbanhoController@index');
     }

@@ -93,7 +93,7 @@ class GdiarioController extends Controller
         $gdiario->altura = $request->altura;
         $gdiario->posicao = $request->posicao;
         $gdiario->descricao = $request->descricao;
-        $event->save();
+        $gdiario->save();
 
         return redirect()->action('GdiarioController@index');
     }

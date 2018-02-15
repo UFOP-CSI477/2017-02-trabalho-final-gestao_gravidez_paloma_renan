@@ -93,7 +93,7 @@ class GvacinaController extends Controller
         $gvacina->nome = $request->nome;
         $gvacina->obs = $request->obs;
         $gvacina->sugerido = $request->sugerido;
-        $event->save();
+        $gvacina->save();
 
         return redirect()->action('GvacinaController@index');
     }

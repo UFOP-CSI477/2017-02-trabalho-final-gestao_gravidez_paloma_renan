@@ -93,7 +93,7 @@ class PitenController extends Controller
         $piten->data = $request->data;
         $piten->local = $request->local;
         $piten->valor = $request->valor;
-        $event->save();
+        $piten->save();
 
         return redirect()->action('PitenController@index');
     }

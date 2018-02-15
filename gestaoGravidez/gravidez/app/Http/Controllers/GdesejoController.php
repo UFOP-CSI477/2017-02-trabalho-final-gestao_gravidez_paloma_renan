@@ -90,7 +90,7 @@ class GdesejoController extends Controller
 
         $gdesejo->data = $request->data;
         $gdesejo->descricao = $request->descricao;
-        $event->save();
+        $gdesejo->save();
 
         return redirect()->action('GdesejoController@index');
     }

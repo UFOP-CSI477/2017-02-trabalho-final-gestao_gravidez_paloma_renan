@@ -7,7 +7,7 @@
     {!!Form::model($gdesejo, [
       'method' => 'patch',
       'route' => ['gdesejo.update', $gdesejo->id],
-      'class' => "form-horizontal",
+      'class' => 'form-horizontal',
       ])
     !!}
 
@@ -22,28 +22,30 @@
 
     </div> 
     
-
     <div class = "form-group">
 
       {!! Form::label('data', 'Data') !!}
-      {!! Form::text('data', 'time', $gdesejo->data, [
+      {!! Form::text('data', $gdesejo->data, [
         'class' => "form-control input-md",
-        'required' => '',
-          'type' => 'time',
+        'placeholder' => "Insira a data",
+        'required' => "",
         ]) 
       !!}
 
-    </div>
+    </div> 
 
-     <div class = "form-group"> 
+    <div class = "form-group">
 
       {!! Form::label('descricao', 'Descrição') !!}
-      {!! Form::input('descricao', $gdesejo->descricao, [
-          'class' => "form-control input-md", 
+      {!! Form::text('descricao', $gdesejo->descricao, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira uma descrição",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
+ 
 
     <div class = "form-group">
 

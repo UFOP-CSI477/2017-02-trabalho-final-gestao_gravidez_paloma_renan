@@ -6,8 +6,8 @@
 
     {!!Form::model($gconsulta, [
       'method' => 'patch',
-      'route' => ['gconsulta.update', $gconsulta->id],
-      'class' => "form-horizontal",
+      'route' => ['galbun.update', $gconsulta->id],
+      'class' => 'form-horizontal',
       ])
     !!}
 
@@ -22,58 +22,65 @@
 
     </div> 
     
-
     <div class = "form-group">
 
       {!! Form::label('data', 'Data') !!}
-      {!! Form::text('data', 'time', $gconsulta->data, [
+      {!! Form::text('data', $gconsulta->data, [
         'class' => "form-control input-md",
-        'required' => '',
-          'type' => 'time',
+        'placeholder' => "Insira a data",
+        'required' => "",
         ]) 
       !!}
 
-    </div>
+    </div> 
 
-     <div class = "form-group"> 
+    <div class = "form-group">
 
-      {!! Form::label('hora', 'Hora') !!}
-      {!! Form::input('hora', $gconsulta->hora, [
-          'class' => "form-control input-md", 
+      {!! Form::label('hora', 'Horário') !!}
+      {!! Form::text('hora', $gconsulta->hora, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira o horário",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
-      <div class = "form-group"> 
+    <div class = "form-group">
 
-      {!! Form::label('medico', 'Nome do médico') !!}
-      {!! Form::input('medico', $gconsulta->medico, [
-          'class' => "form-control input-md", 
+      {!! Form::label('medico', 'Médico') !!}
+      {!! Form::text('medico', $gconsulta->medico, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira o nome do médico",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
-      <div class = "form-group"> 
+    <div class = "form-group">
 
       {!! Form::label('obs', 'Observação') !!}
-      {!! Form::input('obs', $gconsulta->obs, [
-          'class' => "form-control input-md", 
+      {!! Form::text('obs', $gconsulta->obs, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira uma observação",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
-      <div class = "form-group"> 
+    <div class = "form-group">
 
       {!! Form::label('sugerido', 'Dica') !!}
-      {!! Form::input('sugerido', $gconsulta->sugerido, [
-          'class' => "form-control input-md", 
+      {!! Form::text('sugerido', $gconsulta->sugerido, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira uma dica",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
     <div class = "form-group">
 

@@ -7,7 +7,7 @@
     {!!Form::model($palimentacoe, [
       'method' => 'patch',
       'route' => ['palimentacoe.update', $palimentacoe->id],
-      'class' => "form-horizontal",
+      'class' => 'form-horizontal',
       ])
     !!}
 
@@ -21,60 +21,66 @@
       !!}
 
     </div> 
-
-
-    <div class = "form-group"> 
+    
+    <div class = "form-group">
 
       {!! Form::label('cardapio', 'Cardápio') !!}
-      {!! Form::input('cardapio', $palimentacoe->cardapio, [
-          'class' => "form-control input-md", 
+      {!! Form::text('cardapio', $palimentacoe->cardapio, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira o cardápio",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
-    
+    </div> 
 
     <div class = "form-group">
 
       {!! Form::label('data', 'Data') !!}
-      {!! Form::text('data', 'time', $palimentacoe->data, [
+      {!! Form::text('data', $palimentacoe->data, [
         'class' => "form-control input-md",
-        'required' => '',
-          'type' => 'time',
+        'placeholder' => "Insira a data",
+        'required' => "",
+        ]) 
+      !!}
+
+    </div> 
+
+    <div class = "form-group">
+
+      {!! Form::label('hora', 'Horário') !!}
+      {!! Form::text('hora', $palimentacoe->hora, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira o horário",
+        'required' => "",
+        ]) 
+      !!}
+
+    </div> 
+
+    <div class = "form-group">
+
+      {!! Form::label('obs', 'Observação') !!}
+      {!! Form::text('obs', $palimentacoe->obs, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira uma observação",
+        'required' => "",
+        ]) 
+      !!}
+
+    </div> 
+
+    <div class = "form-group">
+
+      {!! Form::label('sugerido', 'Dica') !!}
+      {!! Form::text('sugerido', $palimentacoe->sugerido, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira uma dica",
+        'required' => "",
         ]) 
       !!}
 
     </div>
-
-     <div class = "form-group"> 
-
-      {!! Form::label('hora', 'Hora') !!}
-      {!! Form::input('hora', $palimentacoe->hora, [
-          'class' => "form-control input-md", 
-        ]) 
-      !!}
-
-      </div>
-
-      <div class = "form-group"> 
-
-      {!! Form::label('obs', 'Observação') !!}
-      {!! Form::input('obs', $palimentacoe->obs, [
-          'class' => "form-control input-md", 
-        ]) 
-      !!}
-
-      </div>
-
-      <div class = "form-group"> 
-
-      {!! Form::label('sugerido', 'Dica') !!}
-      {!! Form::input('sugerido', $palimentacoe->sugerido, [
-          'class' => "form-control input-md", 
-        ]) 
-      !!}
-
-      </div>
 
     <div class = "form-group">
 

@@ -7,7 +7,7 @@
     {!!Form::model($gvacina, [
       'method' => 'patch',
       'route' => ['gvacina.update', $gvacina->id],
-      'class' => "form-horizontal",
+      'class' => 'form-horizontal',
       ])
     !!}
 
@@ -22,60 +22,67 @@
 
     </div> 
     
-
     <div class = "form-group">
 
       {!! Form::label('data', 'Data') !!}
-      {!! Form::text('data', 'time', $gvacina->data, [
+      {!! Form::text('data', $gvacina->data, [
         'class' => "form-control input-md",
-        'required' => '',
-          'type' => 'time',
+        'placeholder' => "Insira a data",
+        'required' => "",
         ]) 
       !!}
 
-    </div>
+    </div> 
 
-     <div class = "form-group"> 
+    <div class = "form-group">
 
       {!! Form::label('hora', 'Horário') !!}
-      {!! Form::input('hora', $gvacina->hora, [
-          'class' => "form-control input-md", 
+      {!! Form::text('hora', $gvacina->hora, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira o horário",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
-      <div class = "form-group"> 
+    
+
+    <div class = "form-group">
 
       {!! Form::label('nome', 'Nome') !!}
-      {!! Form::input('nome', $gvacina->nome, [
-          'class' => "form-control input-md", 
+      {!! Form::text('nome', $gvacina->nome, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira o nome da vacina",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
-      <div class = "form-group"> 
+    <div class = "form-group">
 
       {!! Form::label('obs', 'Observação') !!}
-      {!! Form::input('obs', $gvacina->obs, [
-          'class' => "form-control input-md", 
+      {!! Form::text('obs', $gvacina->obs, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira uma observação",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
-
-      <div class = "form-group"> 
+    <div class = "form-group">
 
       {!! Form::label('sugerido', 'Dica') !!}
-      {!! Form::input('sugerido', $gvacina->sugerido, [
-          'class' => "form-control input-md", 
+      {!! Form::text('sugerido', $gvacina->sugerido, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira uma dica",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
-
+    </div> 
 
     <div class = "form-group">
 

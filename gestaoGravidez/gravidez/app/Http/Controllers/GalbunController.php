@@ -90,7 +90,7 @@ class GalbunController extends Controller
 
         $galbun->data = $request->data;
         $galbun->foto = $request->foto;
-        $event->save();
+        $galbun->save();
 
         return redirect()->action('GalbunController@index');
     }

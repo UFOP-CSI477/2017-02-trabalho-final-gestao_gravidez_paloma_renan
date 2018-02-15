@@ -7,7 +7,7 @@
     {!!Form::model($galbun, [
       'method' => 'patch',
       'route' => ['galbun.update', $galbun->id],
-      'class' => "form-horizontal",
+      'class' => 'form-horizontal',
       ])
     !!}
 
@@ -22,29 +22,29 @@
 
     </div> 
     
-
     <div class = "form-group">
 
       {!! Form::label('data', 'Data') !!}
-      {!! Form::text('data', 'time', $galbun->data, [
+      {!! Form::text('data', $galbun->data, [
         'class' => "form-control input-md",
-        'required' => '',
-          'type' => 'time',
+        'placeholder' => "Insira a data",
+        'required' => "",
         ]) 
       !!}
 
-    </div>
+    </div> 
 
-     <div class = "form-group"> 
+    <div class = "form-group">
 
       {!! Form::label('foto', 'Foto') !!}
-      {!! Form::input('foto', $galbun->foto, [
-          'class' => "form-control input-md", 
-          'type' => 'input',
+      {!! Form::text('foto', $galbun->foto, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira foto",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
 
     <div class = "form-group">
 

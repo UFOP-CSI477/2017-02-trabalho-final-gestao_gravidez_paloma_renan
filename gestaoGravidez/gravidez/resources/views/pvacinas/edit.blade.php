@@ -7,7 +7,7 @@
     {!!Form::model($pvacina, [
       'method' => 'patch',
       'route' => ['pvacina.update', $pvacina->id],
-      'class' => "form-horizontal",
+      'class' => 'form-horizontal',
       ])
     !!}
 
@@ -22,48 +22,53 @@
 
     </div> 
     
-
     <div class = "form-group">
 
       {!! Form::label('data', 'Data') !!}
-      {!! Form::text('data', 'time', $pvacina->data, [
+      {!! Form::text('data', $pvacina->data, [
         'class' => "form-control input-md",
-        'required' => '',
-          'type' => 'time',
+        'placeholder' => "Insira a data",
+        'required' => "",
+        ]) 
+      !!}
+
+    </div> 
+
+    <div class = "form-group">
+
+      {!! Form::label('hora', 'Horário') !!}
+      {!! Form::text('hora', $pvacina->hora, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira o horário",
+        'required' => "",
+        ]) 
+      !!}
+
+    </div> 
+
+
+    <div class = "form-group">
+
+      {!! Form::label('nome', 'Dica') !!}
+      {!! Form::text('nome', $pvacina->nome, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira o nome da vacina",
+        'required' => "",
         ]) 
       !!}
 
     </div>
 
-     <div class = "form-group"> 
-
-      {!! Form::label('hora', 'Horário') !!}
-      {!! Form::input('hora', $pvacina->hora, [
-          'class' => "form-control input-md", 
-        ]) 
-      !!}
-
-      </div>
-
-      <div class = "form-group"> 
-
-      {!! Form::label('nome', 'Nome') !!}
-      {!! Form::input('nome', $pvacina->nome, [
-          'class' => "form-control input-md", 
-        ]) 
-      !!}
-
-      </div>
-
-      <div class = "form-group"> 
+    <div class = "form-group">
 
       {!! Form::label('obs', 'Observação') !!}
-      {!! Form::input('obs', $pvacina->obs, [
-          'class' => "form-control input-md", 
+      {!! Form::text('obs', $pvacina->obs, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira uma observação",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
 
     <div class = "form-group">
 

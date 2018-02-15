@@ -89,10 +89,10 @@ class PconsultaController extends Controller
         $pconsulta = Pconsulta::find($id);
 
         $pconsulta->data = $request->data;
-        $Pconsulta->hora = $request->hora;
-        $Pconsulta->pediatra = $request->pediatra;
-        $Pconsulta->obs = $request->obs;
-        $event->save();
+        $pconsulta->hora = $request->hora;
+        $pconsulta->pediatra = $request->pediatra;
+        $pconsulta->obs = $request->obs;
+        $pconsulta->save();
 
         return redirect()->action('PconsultaController@index');
     }

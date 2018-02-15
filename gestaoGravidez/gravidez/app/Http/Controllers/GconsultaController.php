@@ -93,7 +93,7 @@ class GconsultaController extends Controller
         $gconsulta->medico = $request->medico;
         $gconsulta->obs = $request->obs;
         $gconsulta->sugerido = $request->sugerido;
-        $event->save();
+        $gconsulta->save();
 
         return redirect()->action('GconsultaController@index');
     }

@@ -91,7 +91,7 @@ class GhumoreController extends Controller
         $ghumore->data = $request->data;
         $ghumore->nivel = $request->nivel;
         $ghumore->descricao = $request->descricao;
-        $event->save();
+        $ghumore->save();
 
         return redirect()->action('GhumoreController@index');
     }

@@ -60,7 +60,7 @@ class PsonoController extends Controller
         $Psono = Psono::find($id);
 
         return view('psonos.show')
-            ->with('psono', $psonos);
+            ->with('psono', $psono);
     }
 
     /**
@@ -90,7 +90,7 @@ class PsonoController extends Controller
 
         $psono->data = $request->data;
         $psono->hora = $request->hora;
-        $event->save();
+        $psono->save();
 
         return redirect()->action('PsonosController@index');
     }

@@ -7,7 +7,7 @@
     {!!Form::model($psono, [
       'method' => 'patch',
       'route' => ['psono.update', $psono->id],
-      'class' => "form-horizontal",
+      'class' => 'form-horizontal',
       ])
     !!}
 
@@ -22,28 +22,31 @@
 
     </div> 
     
-
     <div class = "form-group">
 
       {!! Form::label('data', 'Data') !!}
-      {!! Form::text('data', 'time', $psono->data, [
+      {!! Form::text('data', $psono->data, [
         'class' => "form-control input-md",
-        'required' => '',
-          'type' => 'time',
+        'placeholder' => "Insira a data",
+        'required' => "",
         ]) 
       !!}
 
-    </div>
+    </div> 
 
-     <div class = "form-group"> 
+    <div class = "form-group">
 
       {!! Form::label('hora', 'Horário') !!}
-      {!! Form::input('hora', $psono->hora, [
-          'class' => "form-control input-md", 
+      {!! Form::text('hora', $psono->hora, [
+        'class' => "form-control input-md",
+        'placeholder' => "Insira o horário",
+        'required' => "",
         ]) 
       !!}
 
-      </div>
+    </div> 
+
+
 
     <div class = "form-group">
 
