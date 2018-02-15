@@ -20,30 +20,6 @@ USE `gravidez` ;
 
 
 -- -----------------------------------------------------
--- Table `gravidez`.`gAlbuns`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`gAlbuns` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `data` DATE NOT NULL,
-  `foto` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
--- -----------------------------------------------------
--- Table `gravidez`.`pAlbuns`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `gravidez`.`pAlbuns` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `data` DATE NOT NULL,
-  `foto` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
--- -----------------------------------------------------
 -- Table `gravidez`.`pAlimentacoes`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `gravidez`.`pAlimentacoes` (
@@ -230,18 +206,6 @@ DEFAULT CHARACTER SET = utf8;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-
-INSERT INTO `gAlbuns` (`id`, `data`, `foto`) VALUES(1, '2018-02-01', 'aaaaaaaa');
-INSERT INTO `gAlbuns` (`id`, `data`, `foto`) VALUES(2, '2018-02-02', 'bbbbbbbb');
-INSERT INTO `gAlbuns` (`id`, `data`, `foto`) VALUES(3, '2018-02-03', 'cccccccc');
-INSERT INTO `gAlbuns` (`id`, `data`, `foto`) VALUES(4, '2018-02-04', 'dddddddd');
-INSERT INTO `gAlbuns` (`id`, `data`, `foto`) VALUES(5, '2018-02-05', 'eeeeeeee');
-
-INSERT INTO `pAlbuns` (`id`, `data`, `foto`) VALUES(1, '2018-03-01', 'ffffffff');
-INSERT INTO `pAlbuns` (`id`, `data`, `foto`) VALUES(2, '2018-03-02', 'gggggggg');
-INSERT INTO `pAlbuns` (`id`, `data`, `foto`) VALUES(3, '2018-03-03', 'hhhhhhhh');
-INSERT INTO `pAlbuns` (`id`, `data`, `foto`) VALUES(4, '2018-03-04', 'iiiiiiii');
-INSERT INTO `pAlbuns` (`id`, `data`, `foto`) VALUES(5, '2018-03-05', 'jjjjjjjj');
 
 INSERT INTO `pAlimentacoes` (`id`, `cardapio`, `data`, `hora`, `obs`, `sugerido` ) VALUES(1, 'leite materno', '2018-02-01', '08:00', '10 min', '*Alimente seu bebê recém nascido a cada 40 min');
 INSERT INTO `pAlimentacoes` (`id`, `cardapio`, `data`, `hora`, `obs`, `sugerido` ) VALUES(2, 'leite materno', '2018-02-01', '08:40', '15 min', '*Alimente seu bebê recém nascido a cada 40 min');
